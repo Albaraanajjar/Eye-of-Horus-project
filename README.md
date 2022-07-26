@@ -14,10 +14,14 @@ traditional approaches in most countries is manned routine monitoring which is e
 fires with visual and infrared imaging. Moreover, many wildfires happen in areas that are very deep in the forests which cant be detected by people early because of their distance from the nearest residential area like Amazon rainforest wildfires. Considering the challenges and issues of these methods, our project offers unmanned monitoring with the ability to locate fires in deep forests via unmanned viechles. Recent advances in artificial intelligence (AI) and machine learning have
 made image-based modeling and analysis (e.g., classification, real-time prediction, and image segmentation) even more successful in different applications. Also, with the advent of nanotechnology semiconductors, a new generation of Tensor Processing Units (TPUs) and Graphical Processing Units (GPUs) can provide an extraordinary computation capability for data-driven methods and magnificent results. Moreover, drones and satellites collected data can be processed easily and passed into CNNs to predict the existence of fire and classifying.
 Most supervised learning methods rely on large training datasets to train areasonably accurate model. most studies used a fire dataset from publicsources to perform fire detection based on pre-trained ANN architectures such as MobileNet and AlexNet. However, that dataset was based on terrestrial images of the fire.
-#about the data used in this project
+
+# about the data used in this project
+
 To the best of our knowledge, there are no satalite images datset for fire analysis, something in urgent need to develop fire modeling and analysis
 tools for space visual monitoring systems. Note that space satalliete imagery exhibits different properties such as low resolutions, and top-view perspective, substantially different than images taken by ground cameras or drones.
 In this project we introduce a new dataset of manually collected 2000 satallite images of wildfires around the world in the last 10 years, we hope this new dataset will benefit data scientsts around the world who work in researching fire processing and to add a new prespective of fire images to the community, and in this project we will focus on the potiential of providing scientsts with this kind of data and how our procedure help in making this kind of data available for those who are intrested.
 
-
+# requirments
+there is ```requirment.txt``` file which contains all packages and versions that must be in your machine to run our project. In addition you will have to install mission planner and must update neseccery file paths according to your machine
+this project runs succesfully on paython 3.7
 
