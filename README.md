@@ -1,5 +1,7 @@
 MAIN(1).py is the code for mission planner simulation
-documentation is the project presentation
+
+documentation is the project presentation:
+
 demo: https://mega.nz/file/TV9mVACL#kWjXdJUYmEr42N9NGJnxM5nUVO88YLTI6v7dPMf2uq8
 # Abstract
 Wildfires are one of the most serious issues we face in our modern era due to climate change, causing damage to millions of hectares of forest resources and threatening the lives of people and animals. Of particular importance are risks to ecosystems and local communities as well as firefighters. which shed the light on the importance of leveraging technology and AI in monitoring and minimizing the risks in case of natural disasters. Eye of Horus project introduces an automated procedure to regularly check and monitor major forests around the world via computer vision technologies and automation technologies such as classification and segmentation to help authorities and firefighters in their responsibilities, provide scientists with visual data and research data for better understanding of this phenomena, as well as helping spread awareness around the world regarding the importance of preserving the environment.
