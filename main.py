@@ -102,25 +102,6 @@ def Main_page():
 
 
 
-
-    menubar = Menu(root.class_root)
-    settings = Menu(menubar, tearoff=0, background=bg, foreground=fg)
-    settings.add_command(label="Settings",command=root.Setting_page_Button_action)
-    settings.add_command(label="PATHES")
-    settings.add_command(label="Save")
-    settings.add_separator()
-    settings.add_command(label="Exit", command=root.class_root.quit)
-    menubar.add_cascade(label="Settings", menu=settings)
-
-    help = Menu(menubar, tearoff=0)
-    help.add_command(label="About", command=root.Description_page_Button_action, background=bg, foreground=fg)
-    help.add_separator()
-    help.add_command(label="Documentation", command=root.Description_page_Button_action, background=bg, foreground=fg)
-    help.add_command(label="Video Presentation", command=root.Description_page_Button_action, background=bg, foreground=fg)
-    menubar.add_cascade(label="Help", menu=help)
-
-    root.class_root.config(menu=menubar)
-
 def Forest_Live_Monitoring_page():
     print("loop through page")
     root.Back_button("Main page")
