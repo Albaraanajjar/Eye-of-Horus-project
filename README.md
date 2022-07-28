@@ -23,7 +23,12 @@ In this project we introduce a new dataset of manually collected 2000 satallite 
 
 # requirments
 there is ```requirment.txt``` file which contains all packages and versions that must be in your machine to run our project. In addition you will have to install mission planner and must update neseccery file paths according to your machine
-this project runs succesfully on paython 3.7
+please open machine planner and maximize the window and keep it maximized then move directly to pycharm or your desired compiler
+
+please create some empty folders in source file(this motion is because github doesnt allow empty folders):
+1-create an empty folder named (sat images) containing another folder named (sat images), this foldr is for uploading images to preprocces it and enter to model
+2-create an empty files named
+this project runs succesfully on paython 3.7 and windows
 
 # project design
 The project was designed to collect data of satellite visual images of a chosen criteria by the user (e.g. forests which the user wants to monitor, custom coordinates given by the user, images or datasets by the user) then process it to a classification model and this model outputs the predicted percentages of Fire vs No_fire and its class to the user, then if there is a fire the software will plan a drone trip via mission planner to validate the predictions of the first model, recording its trip in video format the software will split this video to frames and input it into an AI model which will check for fire frame by frame and determine specifically where the fire is to help identify fires at an early stage.
@@ -31,7 +36,7 @@ The project was designed to collect data of satellite visual images of a chosen 
 # methedology
 This section contains the technical explanation of the technologies and methods we used to implement our project.
 
-[explanation about data collection by selenium bot(to be written by Yaman)]
+when the user choose the way of entering data, if its automatic data entry, a sellenuim bot will go to chrome open source of live satellite data, this bot will acces Html code of the website via XPATH and take screenshot of desired location the store it in a file.
 
 The image classification problem is one of the challenging tasks in the image processing domain. In the past, traditional image processing techniques utilized RGB channel comparison to detect different objects such as fire in frames or videos. These traditional methods are not free of errors and are not fully reliable. For instance, RGB value comparison methods that usually consider a threshold value to detect fire may detect sunset and sunrise as a false positive outcome. However, training a DNN to perform this image classification task helps to learn elements not germane to the fire. Also, some studies such as perform pixel-based classification and segmentation based on the HSV (Hue, Saturation, Value) format. The binary classification model which was used in this project is the Xception network proposed by Google-Keras1. The Xception model is a deep Convolutional Neural Network (DCNN). The structure of the DCNN. The Xception model has three main blocks: 1) the input layer, 2) the hidden layers, and 3) the output layer. The size of the input layer depends on the image size and the number of channels which in our case is (256 × 256 × 3). Then the value of RGBs in different channels are scaled to a float number between 0 and 1.0. The hidden layers rely on depth-wise separable convolutions and shortcut between the convolution blocks (ResNet ). Since the fire-detection is a binary classification task (Fire/No Fire), the activation function for the output layer is a Sigmoid function. Then from this trained model on a sufficient amount of drone images data. drone data was chosen because there is a sufficient amount of it and because its many similarities with satellite images like ariel angle of viewing and low resolution and many other attributes. Data augmentation and piecewise scheduler were used to deal with overfitting.
 
