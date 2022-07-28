@@ -21,6 +21,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
+global PATH
+PATH= 'C:\SeleniumDrivers\chromedriver.exe'
 class Root:
     def __init__(self, title, bg_color, buttons_color, text_color, geometry):
         self.bg_color = bg_color
@@ -348,7 +350,7 @@ def Nasa_bot(coordinates_list):
     i = 0
     s2 = (f'{y}°,{x}°')
     time_sleep= 4
-    PATH = 'C:\SeleniumDrivers\chromedriver.exe'
+    global PATH
     sleep_time = 1
     '''oop= webdriver.ChromeOptions()
     oop.headless= True
