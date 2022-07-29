@@ -32,7 +32,7 @@ please open machine planner and maximize the window and keep it maximized then m
 
 please create some empty folders in source file(this motion is because github doesnt allow empty folders):
 1-create an empty folder named (test) containing another folder named (test), this foldr is for uploading images to preprocces it and enter to model(example put in github raspotidery)
-2-create an empty files named drone images for segmentation model
+2-create an empty files named (drone_segementation_images) for segmentation model
 this project runs succesfully on paython 3.7 and windows
 
 # project design
