@@ -31,7 +31,7 @@ there is ```requirment.txt``` file which contains all packages and versions that
 please open machine planner and maximize the window and keep it maximized then move directly to pycharm or your desired compiler
 
 please create some empty folders in source file(this motion is because github doesnt allow empty folders):
-1-create an empty folder named (sat images) containing another folder named (sat images), this foldr is for uploading images to preprocces it and enter to model(example put in github raspotidery)
+1-create an empty folder named (test) containing another folder named (test), this foldr is for uploading images to preprocces it and enter to model(example put in github raspotidery)
 2-create an empty files named drone images for segmentation model
 this project runs succesfully on paython 3.7 and windows
 
