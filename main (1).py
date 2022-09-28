@@ -116,5 +116,5 @@ def mission_planner(lg1,la1,lg2,la2,lg3,la3,lg4,la4):
         screen_shot = ImageGrab.grab()
         screen_shot.save('img.png')
         Process_image()
-
+#test_case
 mission_planner(35,35,35,35,35,35,35,35)
